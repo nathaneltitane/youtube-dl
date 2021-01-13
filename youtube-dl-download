@@ -1,0 +1,21 @@
+
+#!/bin/bash
+
+# dependencies #
+
+source /data/data/com.termux/files/usr/bin/console
+source /data/data/com.termux/files/usr/bin/termux-globals
+
+# usage #
+
+# variables #
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# initial prompt clear #
+
+clear
+
+# download #
+
+console.get https://yt-dl.org/downloads/latest youtube-dl /usr/bin
